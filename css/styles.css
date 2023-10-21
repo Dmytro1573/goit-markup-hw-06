@@ -1316,6 +1316,10 @@ body {
         letter-spacing: 0.04em;
         text-align: left;
     }
+
+    .header-menu {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1413,5 +1417,9 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         text-align: left;
+    }
+
+    .header-menu {
+        display: none;
     }
 }
