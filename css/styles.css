@@ -56,7 +56,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--main-title-portfolio-color)
+    color: var(--main-title-portfolio-color);
+    margin-right: 76px;
 }
 
 .logo-link-footer {
@@ -100,9 +101,6 @@ body {
     align-items: center;
 }
 
-.header-link {
-    margin-right: 76px;
-}
 
 .header-list {
     /* display: flex; */
@@ -114,7 +112,7 @@ body {
 .header-list-item {
     display: block;
     position: relative;
-    /* padding: 24px 0; */
+    padding: 24px 0;
     font-weight: 500;
     text-decoration: none;
     color: #2E2F42;
@@ -183,6 +181,13 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #fff;
+    padding: 24px 24px 40px 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
 
 .menu-open-btn {
@@ -191,22 +196,13 @@ body {
 }
 
 
-
-.header-menu {
-    padding: 24px 24px 40px 16px;
-    /* overflow: auto;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden; */
-}
-
 .menu-list {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 168px;
     list-style: none;
-    margin-top: 48px;
+    margin-bottom: auto;
+    padding: 48px 0 0 0;
 }
 
 .menu-list-link {
@@ -216,7 +212,7 @@ body {
     letter-spacing: 0.02em;
     text-align: left;
     text-decoration: none;
-
+    padding: 0;
     color: #2E2F42;
 }
 
@@ -954,6 +950,12 @@ body {
     visibility: hidden;
 }
 
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
 .modal {
     position: absolute;
     top: 50%;
@@ -1276,10 +1278,15 @@ body {
 
     .media {
         display: block;
+        margin-bottom: 0;
     }
 
     .footer-content {
         display: block;
+    }
+
+    .footer-subtitle {
+        margin-bottom: 0;
     }
 
     .header-list {
@@ -1298,7 +1305,7 @@ body {
     }
 
     .header-content {
-        padding: 24px 16px;
+        padding: 0 16px;
     }
 
     .modal {
@@ -1383,6 +1390,7 @@ body {
 
     .media {
         margin-right: 80px;
+        margin-bottom: 0;
     }
 
     .footer-form-main {
@@ -1407,6 +1415,7 @@ body {
         width: 408px;
     }
 
+
     .header-list-item::after {
         display: block;
     }
@@ -1421,5 +1430,9 @@ body {
 
     .header-menu {
         display: none;
+    }
+
+    .header-content {
+        padding: 0;
     }
 }
